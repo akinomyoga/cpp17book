@@ -48,7 +48,7 @@ $$
   \mathsf{L}_n(x) =
   \frac{e^x}{n!} \frac{ \mathsf{d} ^ n}
 		    { \mathsf{d}x ^ n} \, (x^n e^{-x}),
-	   \quad \mbox{for $x \ge 0$}
+	   \quad \mbox{for $x \ge 0$}.
 $$
 
 $n$をn、$x$をxとする。
@@ -72,7 +72,7 @@ $$
   \mathsf{L}_n^m(x) =
   (-1)^m \frac{\mathsf{d} ^ m}
 	   {\mathsf{d}x ^ m} \, \mathsf{L}_{n+m}(x),
-	   \quad \mbox{for $x \ge 0$}
+	   \quad \mbox{for $x \ge 0$}.
 $$
 
 $n$をn、$m$をm、$x$をxとする。
@@ -98,7 +98,7 @@ $$
        {2^\ell \, \ell!}
   \frac{ \mathsf{d} ^ \ell}
        { \mathsf{d}x ^ \ell} \, (x^2 - 1) ^ \ell,
-	   \quad \mbox{for $|x| \le 1$}
+	   \quad \mbox{for $|x| \le 1$}.
 $$
 
 $l$をl、$x$をxとする。
@@ -124,7 +124,7 @@ $$
   \:
   \frac{ \mathsf{d} ^ m}
        { \mathsf{d}x ^ m} \, \mathsf{P}_\ell(x),
-	   \quad \mbox{for $|x| \le 1$}
+	   \quad \mbox{for $|x| \le 1$}.
 $$
 
 $l$をl、$m$をm、$x$をxとする。
@@ -144,7 +144,7 @@ long double  sph_legendrel(unsigned l, unsigned m, long double theta);
 戻り値：
 
 $$
-  \mathsf{Y}_\ell^m(\theta, 0)
+  \mathsf{Y}_\ell^m(\theta, 0).
 $$
 
 このとき、
@@ -158,7 +158,7 @@ $$
          \right]^{1/2}
 	 \mathsf{P}_\ell^m
 	 ( \cos\theta ) e ^ {i m \phi},
-	   \quad \mbox{for $|m| \le \ell$}
+	   \quad \mbox{for $|m| \le \ell$}.
 $$
 
 $l$をl、$m$をm、$\theta$をthetaとする。
@@ -195,8 +195,7 @@ long double  hermitel(unsigned n, long double x);
 $$
   \mathsf{H}_n(x) =
   (-1)^n e^{x^2} \frac{ \mathsf{d} ^n}
-		      { \mathsf{d}x^n} \, e^{-x^2}
-\;
+		      { \mathsf{d}x^n} \, e^{-x^2}.
 $$
 
 $n$をn、$x$をxとする。
@@ -220,7 +219,7 @@ $$
   \mathsf{B}(x, y) =
   \frac{ \Gamma(x) \, \Gamma(y) }
        { \Gamma(x+y) },
-       \quad \mbox{for $x > 0$,\, $y > 0$}
+       \quad \mbox{for $x > 0$,\, $y > 0$}.
 $$
 
 $x$をx、$y$をyとする。
@@ -241,7 +240,7 @@ long double comp_ellint_1l(long double k);
 $$
   \mathsf{K}(k) =
   \mathsf{F}(k, \pi / 2),
-		      \quad \mbox{for $|k| \le 1$}
+		      \quad \mbox{for $|k| \le 1$}.
 $$
 
 $k$をkとする。
@@ -263,7 +262,7 @@ long double comp_ellint_2l(long double k);
 $$
   \mathsf{E}(k) =
   \mathsf{E}(k, \pi / 2),
-\quad \mbox{for $|k| \le 1$}
+\quad \mbox{for $|k| \le 1$}.
 $$
 
 $k$をkとする。
@@ -284,7 +283,7 @@ long double comp_ellint_3l(long double k, long double nu);
 
 $$
   \mathsf{\Pi}(\nu, k) = \mathsf{\Pi}(\nu, k, \pi / 2),
-		\quad \mbox{for $|k| \le 1$}
+		\quad \mbox{for $|k| \le 1$}.
 $$
 
 $k$をk、$\nu$をnuとする。
@@ -307,7 +306,7 @@ $$
   \mathsf{F}(k, \phi) =
   \int_0^\phi \! \frac{\mathsf{d}\theta}
                       {\sqrt{1 - k^2 \sin^2 \theta}},
-	   \quad \mbox{for $|k| \le 1$}
+	   \quad \mbox{for $|k| \le 1$}.
 $$
 
 $k$をk、$\phi$をphiとする。
@@ -328,7 +327,7 @@ long double  ellint_2l(long double k, long double phi);
 $$
   \mathsf{E}(k, \phi) =
   \int_0^\phi \! \sqrt{1 - k^2 \sin^2 \theta} \, \mathsf{d}\theta,
-	   \quad \mbox{for $|k| \le 1$}
+	   \quad \mbox{for $|k| \le 1$}.
 $$
 
 
@@ -351,7 +350,7 @@ $$
   \mathsf{\Pi}(\nu, k, \phi) =
   \int_0^\phi \! \frac{ \mathsf{d}\theta }
                       { (1 - \nu \, \sin^2 \theta) \sqrt{1 - k^2 \sin^2 \theta} },
-	   \quad \mbox{for $|k| \le 1$}
+	   \quad \mbox{for $|k| \le 1$}.
 $$
 
 $\nu$をnu、$k$をk、$\phi$をphiとする。
@@ -373,7 +372,7 @@ $$
   \mathsf{J}_\nu(x) =
   \sum_{k=0}^\infty \frac{(-1)^k (x/2)^{\nu+2k}}
 			 {k! \: \Gamma(\nu+k+1)},
-	   \quad \mbox{for $x \ge 0$}
+	   \quad \mbox{for $x \ge 0$}.
 $$
 
 $\nu$をnu、$x$をxとする。
@@ -405,7 +404,7 @@ $$
   \displaystyle
   \lim_{\mu \rightarrow \nu} \frac{\mathsf{J}_\mu(x) \cos \mu\pi - \mathsf{J}_{-\mu}(x)}
                                 {\sin \mu\pi },
-  & \mbox{for $x \ge 0$ and integral $\nu$}
+  & \mbox{for $x \ge 0$ and integral $\nu$}.
   \end{array}
   \right.
 $$
@@ -435,7 +434,7 @@ $$
   =
   \sum_{k=0}^\infty \frac{(x/2)^{\nu+2k}}
 			 {k! \: \Gamma(\nu+k+1)},
-	   \quad \mbox{for $x \ge 0$}
+	   \quad \mbox{for $x \ge 0$}.
 $$
 
 $\nu$をnu、$x$をxとする。
@@ -475,7 +474,7 @@ $$
   \frac{\pi}{2}
   \lim_{\mu \rightarrow \nu} \frac{\mathsf{I}_{-\mu}(x) - \mathsf{I}_{\mu}(x)}
                                   {\sin \mu\pi },
-  & \mbox{for $x \ge 0$ and integral $\nu$}
+  & \mbox{for $x \ge 0$ and integral $\nu$}.
   \end{array}
   \right.
 $$
@@ -502,7 +501,7 @@ long double  sph_bessell(unsigned n, long double x);
 $$
   \mathsf{j}_n(x) =
   (\pi/2x)^{1\!/\!2} \mathsf{J}_{n + 1\!/\!2}(x),
-	   \quad \mbox{for $x \ge 0$}
+	   \quad \mbox{for $x \ge 0$}.
 $$
 
 注意： n \>= 128 のときの関数の呼び出しの効果は実装定義である。
@@ -524,7 +523,7 @@ long double  sph_neumannl(unsigned n, long double x);
 $$
   \mathsf{n}_n(x) =
   (\pi/2x)^{1\!/\!2} \mathsf{N}_{n + 1\!/\!2}(x),
-	   \quad \mbox{for $x \ge 0$}
+	   \quad \mbox{for $x \ge 0$}.
 $$
 
 $n$をn、$x$をxとする。
@@ -549,8 +548,7 @@ long double  expintl(long double x);
 $$
   \mathsf{Ei}(x) =
   - \int_{-x}^\infty \frac{e^{-t}}
-                          {t     } \, \mathsf{d}t
-\;
+                          {t     } \, \mathsf{d}t.
 $$
 
 $x$をxとする。
@@ -586,7 +584,7 @@ $$
   \\
   \displaystyle
   2^x \pi^{x-1} \sin(\frac{\pi x}{2}) \, \Gamma(1-x) \, \zeta(1-x),
-  & \mbox{for $x < 0$}
+  & \mbox{for $x < 0$}.
   \end{array}
   \right.
 \;
