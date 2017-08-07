@@ -40,7 +40,7 @@ float        laguerref(unsigned n, float x);
 long double  laguerrel(unsigned n, long double x);
 ~~~
 
-効果：実引数n, xに対するラゲール多項式(Laguerre polynomials)を計算する。
+効果：実引数n, xに対するラゲール多項式(Laguerre polynomials)を評価する。
 
 戻り値：
 
@@ -64,7 +64,7 @@ float       assoc_laguerref(unsigned n, unsigned m, float x);
 long double assoc_laguerrel(unsigned n, unsigned m, long double x);
 ~~~
 
-効果：実引数n, m, xに対するラゲール陪多項式(Associated Laguerre polynomials)を計算する。
+効果：実引数n, m, xに対するラゲール陪多項式(Associated Laguerre polynomials)を評価する。
 
 戻り値：
 
@@ -88,7 +88,7 @@ float        legendref(unsigned l, float x);
 long double  legendrel(unsigned l, long double x);
 ~~~
 
-効果：実引数l, xに対するルジャンドル多項式(Legendre polynomials)を計算する。
+効果：実引数l, xに対するルジャンドル多項式(Legendre polynomials)を評価する。
 
 戻り値：
 
@@ -114,7 +114,7 @@ float       assoc_legendref(unsigned l, unsigned m, float x);
 long double assoc_legendrel(unsigned l, unsigned m, long double x);
 ~~~
 
-効果：実引数l, m, xに対するルジャンドル陪関数(Associated Legendre functions)を計算する。
+効果：実引数l, m, xに対するルジャンドル陪関数(Associated Legendre functions)を評価する。
 
 戻り値：
 
@@ -139,7 +139,7 @@ float        sph_legendref(unsigned l, unsigned m, float theta);
 long double  sph_legendrel(unsigned l, unsigned m, long double theta);
 ~~~
 
-効果：実引数l, m, theta(thetaの単位はラジアン)に対する球面ルジャンドル陪関数(Spherical associated Legendre functions)を計算する。
+効果：実引数l, m, theta(thetaの単位はラジアン)に対する球面ルジャンドル陪関数(Spherical associated Legendre functions)を評価する。
 
 戻り値：
 
@@ -188,7 +188,7 @@ float        hermitef(unsigned n, float x);
 long double  hermitel(unsigned n, long double x);
 ~~~
 
-効果：実引数n, xに対するエルミート多項式(Hermite polynomials)を計算する。
+効果：実引数n, xに対するエルミート多項式(Hermite polynomials)を評価する。
 
 戻り値：
 
@@ -212,7 +212,7 @@ float       betaf(float x, float y);
 long double betal(long double x, long double y);
 ~~~
 
-効果：実引数x, yに対するベータ関数(Beta function)を計算する。
+効果：実引数x, yに対するベータ関数(Beta function)を評価する。
 
 戻り値：
 
@@ -234,7 +234,7 @@ float       comp_ellint_1f(float k);
 long double comp_ellint_1l(long double k);
 ~~~
 
-効果：実引数kに対する第1種完全楕円積分(Complete elliptic integral of the first kind)を計算する。
+効果：実引数kに対する第1種完全楕円積分(Complete elliptic integral of the first kind)を評価する。
 
 戻り値：
 
@@ -256,7 +256,7 @@ float       comp_ellint_2f(float k);
 long double comp_ellint_2l(long double k);
 ~~~
 
-効果：実引数kに対する第2種完全楕円積分(Complete elliptic integral of the second kind)を計算する。
+効果：実引数kに対する第2種完全楕円積分(Complete elliptic integral of the second kind)を評価する。
 
 戻り値：
 
@@ -278,7 +278,7 @@ float       comp_ellint_3f(float k, float nu);
 long double comp_ellint_3l(long double k, long double nu);
 ~~~
 
-効果：実引数k, nuに対する第3種完全楕円積分(Complete elliptic integral of the third kind)を計算する。
+効果：実引数k, nuに対する第3種完全楕円積分(Complete elliptic integral of the third kind)を評価する。
 
 戻り値：
 
@@ -299,7 +299,7 @@ float        ellint_1f(float k, float phi);
 long double  ellint_1l(long double k, long double phi);
 ~~~
 
-効果：実引数k, phi(phiの単位はラジアン)に対する第1種不完全楕円積分(Incomplete elliptic integral of the first kind)を計算する。
+効果：実引数k, phi(phiの単位はラジアン)に対する第1種不完全楕円積分(Incomplete elliptic integral of the first kind)を評価する。
 
 戻り値：
 
@@ -321,7 +321,7 @@ float        ellint_2f(float k, float phi);
 long double  ellint_2l(long double k, long double phi);
 ~~~
 
-効果：実引数k, phi(phiの単位はラジアン)に対する第2種不完全楕円積分(Incomplete elliptic integral of the second kind)を計算する。
+効果：実引数k, phi(phiの単位はラジアン)に対する第2種不完全楕円積分(Incomplete elliptic integral of the second kind)を評価する。
 
 戻り値：
 
@@ -343,7 +343,7 @@ float        ellint_3f(float k, float nu, float phi);
 long double  ellint_3l(long double k, long double nu, long double phi);
 ~~~
 
-効果：実引数k, nu, phi(phiの単位はラジアン)に対する第3種不完全楕円積分(Incomplete elliptic integral of the third kind)を計算する。
+効果：実引数k, nu, phi(phiの単位はラジアン)に対する第3種不完全楕円積分(Incomplete elliptic integral of the third kind)を評価する。
 
 戻り値：
 
@@ -365,7 +365,7 @@ float        cyl_bessel_jf(float nu, float x);
 long double  cyl_bessel_jl(long double nu, long double x);
 ~~~
 
-効果：実引数nu, kに対する第1種ベッセル関数(Cylindrical Bessel functions of the first kind, Bessel functions of the first kind)を計算する。
+効果：実引数nu, kに対する第1種ベッセル関数(Cylindrical Bessel functions of the first kind, Bessel functions of the first kind)を評価する。
 
 戻り値：
 
@@ -388,7 +388,7 @@ float        cyl_neumannf(float nu, float x);
 long double  cyl_neumannl(long double nu, long double x);
 ~~~
 
-効果：実引数nu, xに対するノイマン関数(Cylindrical Neumann functions, Neumann functions)、またの名を第2種ベッセル関数(Cylindrical Bessel functions of the second kind, Bessel functions of the second kind)を計算する。
+効果：実引数nu, xに対するノイマン関数(Cylindrical Neumann functions, Neumann functions)、またの名を第2種ベッセル関数(Cylindrical Bessel functions of the second kind, Bessel functions of the second kind)を評価する。
 
 戻り値：
 
@@ -425,7 +425,7 @@ float        cyl_bessel_if(float nu, float x);
 long double  cyl_bessel_il(long double nu, long double x);
 ~~~
 
-効果：実引数nu, xに対する第1種変形ベッセル関数(Regular modified cylindrical Bessel functions, Modified Bessel functions of the first kind)を計算する。
+効果：実引数nu, xに対する第1種変形ベッセル関数(Regular modified cylindrical Bessel functions, Modified Bessel functions of the first kind)を評価する。
 
 戻り値：
 
@@ -452,7 +452,7 @@ float        cyl_bessel_kf(float nu, float x);
 long double  cyl_bessel_kl(long double nu, long double x);
 ~~~
 
-効果：実引数nu, xに対する第2種変形ベッセル関数(Irregular modified cylindrical Bessel functions, Modified Bessel functions of the second kind)を計算する。
+効果：実引数nu, xに対する第2種変形ベッセル関数(Irregular modified cylindrical Bessel functions, Modified Bessel functions of the second kind)を評価する。
 
 戻り値：
 
@@ -495,7 +495,7 @@ float        sph_besself(unsigned n, float x);
 long double  sph_bessell(unsigned n, long double x);
 ~~~
 
-効果：実引数n, xに対する第1種球ベッセル関数(Spherical Bessel functions of the first kind)を計算する。
+効果：実引数n, xに対する第1種球ベッセル関数(Spherical Bessel functions of the first kind)を評価する。
 
 戻り値：
 
@@ -517,7 +517,7 @@ float        sph_neumannf(unsigned n, float x);
 long double  sph_neumannl(unsigned n, long double x);
 ~~~
 
-効果：実引数n, xに対する球ノイマン関数(Spherical Neumann functions)、またの名を第2種球ベッセル関数(Spherical Bessel functions of the second kind)を計算する。
+効果：実引数n, xに対する球ノイマン関数(Spherical Neumann functions)、またの名を第2種球ベッセル関数(Spherical Bessel functions of the second kind)を評価する。
 
 戻り値：
 
@@ -542,7 +542,7 @@ float        expintf(float x);
 long double  expintl(long double x);
 ~~~
 
-効果：実引数xに対する指数積分(Exponential integral)を計算する。
+効果：実引数xに対する指数積分(Exponential integral)を評価する。
 
 戻り値：
 
@@ -564,7 +564,7 @@ float        riemann_zetaf(float x);
 long double  riemann_zetal(long double x);
 ~~~
 
-効果：実引数xに対するリーマンゼータ関数(Riemann zeta function)を計算する。
+効果：実引数xに対するリーマンゼータ関数(Riemann zeta function)を評価する。
 
 戻り値：
 
