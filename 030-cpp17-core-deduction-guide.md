@@ -96,8 +96,8 @@ public :
 } ;
 
 
-template < typename T >
-Container( std::initializer_list<T> ) -> Container<T> ;
+template < typename U >
+Container( std::initializer_list<U> ) -> Container<U> ;
 
 
 int main()
@@ -106,6 +106,6 @@ int main()
 }
 ~~~
 
-C++コンパイラーはこの推定ガイドから、Container\<T\>::Container( std::initializer_list\<T\> )の場合はTをTとして推定すればよいことがわかる。
+C++コンパイラーはこの推定ガイドから、Container\<T\>::Container( std::initializer_list\<U\> )の場合はTをUとして推定すればよいことがわかる。
 
 機能テストマクロは__cpp_deduction_guides, 値は201606。
